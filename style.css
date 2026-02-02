@@ -158,56 +158,87 @@ body {
 @media (max-width: 650px) {
 
   body {
+    margin: 0;
     padding: 0;
+    background-color: hsl(221, 100%, 96%);
   }
 
   .container {
     padding: 0;
+    width: 100%;
   }
 
   .card {
-    grid-template-columns: 1fr;     /* stack vertically */
+    grid-template-columns: 1fr;
+    width: 100%;
     max-width: 100%;
     min-height: 100vh;
     border-radius: 0;
+    box-shadow: none;
   }
 
+  /* RESULT SECTION */
   .result {
-    border-radius: 0 0 30px 30px;
     padding: 2.5rem 2rem;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .result h3 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .score-circle {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 1.2rem;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 1.5rem;
   }
 
   .score-circle h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+  }
+
+  .score-circle p {
+    font-size: 0.9rem;
+  }
+
+  .result h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
   }
 
   .result-text {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     max-width: 260px;
     margin: 0 auto;
+    line-height: 1.5;
   }
 
+  /* SUMMARY SECTION */
   .summary {
-    padding: 1.8rem;
+    padding: 1.8rem 1.5rem 2rem;
   }
 
   .summary h3 {
+    font-size: 1.1rem;
     margin-bottom: 1.2rem;
   }
 
   .summary-item {
-    font-size: 0.85rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 12px;
   }
 
+  .summary-item strong {
+    font-size: 0.95rem;
+  }
+
+  /* BUTTON */
   .btn {
-    font-size: 0.9rem;
+    margin-top: 1.5rem;
     padding: 1rem;
+    font-size: 1rem;
+    border-radius: 30px;
   }
 }
-
